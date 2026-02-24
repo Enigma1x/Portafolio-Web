@@ -1,16 +1,45 @@
-# React + Vite
+# Portafolio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio personal desarrollado con React y Vite. Incluye secciones de presentación, sobre mí, proyectos y habilidades, con soporte para modo oscuro.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **Vite 7**
+- **Tailwind CSS 4**
+- ESLint
 
-## React Compiler
+## Estructura del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/components/` — Componentes de la página:
+  - **Header** — Navegación
+  - **Hero** — Sección principal de presentación
+  - **About** — Sobre mí
+  - **Projects** — Proyectos (con modal de detalle)
+  - **Skills** — Habilidades / tecnologías
+  - **Footer** — Pie de página
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Comando   | Descripción              |
+|----------|---------------------------|
+| `npm run dev`    | Servidor de desarrollo (Vite) |
+| `npm run build`  | Build de producción      |
+| `npm run preview`| Vista previa del build   |
+| `npm run lint`   | Ejecutar ESLint          |
+
+## Cómo empezar
+
+```bash
+npm install
+npm run dev
+```
+
+La app se abrirá en `http://localhost:5173` (o el puerto que indique Vite).
+
+## Build para producción
+
+```bash
+npm run build
+```
+
+Los archivos generados quedan en la carpeta `dist/`.
